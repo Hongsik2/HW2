@@ -10,7 +10,7 @@
 
   
 
-![실행시간 그래프](C:\Users\p0306\Desktop\실행시간 그래프.png)
+![실행시간 그래프](https://user-images.githubusercontent.com/80087069/114026759-9583ac80-98b1-11eb-9c5a-f782ec198b0f.png)
 
 
 
