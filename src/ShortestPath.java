@@ -1,4 +1,4 @@
-//통합 완료!
+//통합
 
 import java.util.Scanner;
 
@@ -13,8 +13,8 @@ public class ShortestPath {
 
     static void input(int i, int j, int w) { //정점끼리 간선으로 연결. 가중치 값으로 대입
 
-        Graph[i][j] = w;                   //i번 노드와 j번 노드 연결하는 간선의 가중치 = w
-        Graph[j][i] = w;                   //j번 노드와 i번 노드 연결하는 간선의 가중치 = w
+        Graph[i][j] = w;                   //i번 노드와 j번 노드 연결하는 간선의 거리 = w
+        Graph[j][i] = w;                   //j번 노드와 i번 노드 연결하는 간선의 거리 = w
     }
 
     static int findindex() {
