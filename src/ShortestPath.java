@@ -33,7 +33,7 @@ public class ShortestPath {
         D[s] = 0;                           //D[s]=0으로 초기화한다
         check[s] = true;
 
-        for(int i=0; i<n-1; i++){
+        for(int i=0; i<n; i++){
             if(!check[i] && G[s][i] != 0){
                 D[i] = G[s][i];
             }
@@ -78,6 +78,9 @@ public class ShortestPath {
 
     public static void main(String[] args) {
 
+
+
+
         Scanner sc = new Scanner(System.in);
 
         System.out.printf("노드 개수 입력 : ");
@@ -95,8 +98,6 @@ public class ShortestPath {
 
         while(true){
 
-            System.out.printf("노드 %d 입력 : ",count );
-            count++;
 
             int a = sc.nextInt();
             if(a == 0){
@@ -110,8 +111,15 @@ public class ShortestPath {
         }
 
 
+        long startTime = System.nanoTime();
+
+
         Dijkstra(s);            //다익스트라 알고리즘 실행
 
 
+        long estimatedTime = System.nanoTime() - startTime;
+
+        System.out.println();
+        System.out.printf("걸린 시간 : %d 나노초",estimatedTime);
     }
 }
